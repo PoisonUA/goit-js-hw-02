@@ -1,4 +1,5 @@
-function calculateEngravingPrice(message, pricePerWord, i=1) {
+/* eslint-disable */
+function calculateEngravingPrice(message, pricePerWord, i = 1) {
   for (let space of message) {
     if (space==' ') {
       i++;
