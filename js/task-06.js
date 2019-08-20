@@ -1,6 +1,4 @@
-const stopWords = ['spam', 'sale'];
-
-function checkForSpam(string, array) {
+function checkForSpam(string, stopWords = ['spam', 'sale']) {
     string = string.toLowerCase();
 
     for (let i = 0; i < stopWords.length; i += 1) {
@@ -12,10 +10,10 @@ function checkForSpam(string, array) {
     return false;
 }
 
-console.log(checkForSpam('Latest technology news', stopWords)); // false
+console.log(checkForSpam('Latest technology news')); // false
 
-console.log(checkForSpam('JavaScript weekly newsletter', stopWords)); // false
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
 
-console.log(checkForSpam('Get best sale offers now!', stopWords)); // true
+console.log(checkForSpam('Get best sale offers now!')); // true
 
-console.log(checkForSpam('[SPAM] How to earn fast money?', stopWords)); // true
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
