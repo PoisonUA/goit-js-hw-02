@@ -1,6 +1,5 @@
-let biggest;
-
 function findLongestWord(string) {
+  let biggest;
   let divided = string.split(' ');
   let unchecked = 0;
   

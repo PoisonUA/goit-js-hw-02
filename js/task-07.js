@@ -4,6 +4,7 @@ let total = 0;
 
 do {
   input = prompt(`Пожалуйста, введите число:`);
+
   if (!isNaN(input) && input !== null) {
     numbers.push(Number(input));
   } 

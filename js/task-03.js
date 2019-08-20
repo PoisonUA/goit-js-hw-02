@@ -1,12 +1,6 @@
 /* eslint-disable */
-function calculateEngravingPrice(message, pricePerWord, i = 1) {
-  for (let space of message) {
-    if (space==' ') {
-      i++;
-    } 
-  }
-  return pricePerWord * i;
-}
+
+const calculateEngravingPrice = (message, pricePerWord) => message.split(' ').length * pricePerWord;
 
 console.log(
   calculateEngravingPrice(

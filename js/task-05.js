@@ -1,11 +1,5 @@
+const formatString = (string, value = 40) => string.length > value ? `${string.slice(0, value)}...` : string;
 
-function formatString(string) {
-  let someText = string;
-  if (someText.length > 40) {
-    someText = someText.slice(0,40) + '...';
-  }
-  return someText;
-}
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // вернется оригинальная строка
